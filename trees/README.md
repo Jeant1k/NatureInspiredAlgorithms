@@ -4,13 +4,13 @@ This program draws unique trees by generating their genetic codes according to t
 
 # Theory
 
-*Pythagorean tree:*
+**Pythagorean tree:**
 - variables: 0, 1
 - constants: [, ]
 - axiom: 0
 - rules: (1 → 11), (0 → 1[0]0)
 
-*Meaning of the commands:*
+**Meaning of the commands:**
 - 0: draw a segment ending with a leaf
 - 1: draw a segment
 - [: put the position and drawing angle on the stack, rotate to the left 45 degrees
