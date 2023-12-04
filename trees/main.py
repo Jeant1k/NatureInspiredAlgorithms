@@ -14,6 +14,9 @@ colors = ['#271d17', '#708a21', '#243219', '#4f6028']
 angle_scale = 1    # множитель случайности угла кроны (от 0 до 2)
 length_scale = 1    # множитель случайности длины дерева (от 0 до 2)
 
+x = 0
+y = -300
+
 mod = int(input('Привет! Эта программа рисует уникальные деревья на основе генерации их генетических кодов.\n'
                 'Введите модификатор дерева:\n\t\t'
                 '0 - стоковое дерево\n\t\t'
@@ -34,6 +37,7 @@ while True:
         thick_reduction_speed = 0.4
         axiom = '2' * 8 + '0'
         angle_scale = 2
+        y = -50
         break
     elif mod == 3:
         num_i = 7
@@ -41,6 +45,7 @@ while True:
         trunk = 7
         thick = 20
         axiom = '0'
+        y = -50
         break
     else:
         mod = int(input('Введите корректный модификатор.\n'))
@@ -68,7 +73,7 @@ print('-- Отрисовка дерева...')
 
 t.hideturtle()
 t.penup()
-t.setpos(0, -300)
+t.setpos(x, y)
 t.left(90)
 t.pendown()
 t.tracer(0)
